@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="calc">
+    <div class="painel">
+      <div id="result"></div>
+      <div id="counting"></div>
+    </div>
+    
+    <div class="line">
+      <button onclick="addNumber(7)" class="buttonNumber"> 7 </button>
+      <button onclick="addNumber(8)" class="buttonNumber"> 8 </button>
+      <button onclick="addNumber(9)" class="buttonNumber"> 9 </button>
+      <button onclick="addOperator('÷')" class="buttonOperator"> ÷ </button>
+    </div>
+    <div class="line">
+      <button onclick="addNumber(4)" class="buttonNumber"> 4 </button>
+      <button onclick="addNumber(5)" class="buttonNumber"> 5 </button>
+      <button onclick="addNumber(6)" class="buttonNumber"> 6 </button>
+      <button onclick="addOperator('x')" class="buttonOperator"> x </button>
+    </div>
+    <div class="line">
+      <button onclick="addNumber(1)" class="buttonNumber"> 1 </button>
+      <button onclick="addNumber(2)" class="buttonNumber"> 2 </button>
+      <button onclick="addNumber(3)" class="buttonNumber"> 3 </button>
+      <button onclick="addOperator('-')" class="buttonOperator"> - </button>
+    </div>
+    <div class="line">
+      <button onclick="addNumber(0)" class="buttonNumber"> 0 </button>
+      <button class="buttonNumber"> . </button>
+      <button onclick="calculate()" class="buttonResult"> = </button>
+      <button onclick="addOperator('+')" class="buttonOperator"> + </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
